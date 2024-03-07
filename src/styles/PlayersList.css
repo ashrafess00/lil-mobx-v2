@@ -1,0 +1,47 @@
+.container {
+  white-space: nowrap;
+  align-items: center;
+  border: #090909;
+  width: 100%;
+}
+
+
+.player-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  width: 100%;
+  padding: 1rem;
+}
+
+.remove-button {
+  cursor: pointer;
+  color: #090909;
+  padding: 0.5em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -3px -4px 12px #fff;
+  margin-top: 1rem;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.subTitle {
+  font-size: 1.5em;
+  text-align: center;
+  color: #5c5a5a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 20px;
+  padding: 0;
+}
