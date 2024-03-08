@@ -3,7 +3,7 @@ import NewPlayer from "./components/NewPlayer";
 import PlayersList from "./components/PlayersList";
 import PlayersListGame from "./components/PlayersListGame";
 import Word from "./components/Word";
-import ResetButton from "./components/ResetButton";
+import SpeedSlider from "./components/SpeedSlider";
 import { PlayersStore } from "./mobX/PlayersStore";
 import { useMemo } from "react";
 import "./styles/App.css";
@@ -31,7 +31,7 @@ const App = observer(() => {
       <Reset PlayersStore={playersStore}/>
       <PlayersListGame PlayersStore={playersStore} />
       <Word PlayersStore={playersStore} />
-      <ResetButton PlayersStore={playersStore} />
+      <SpeedSlider PlayersStore={playersStore} />
       <WinnerText PlayersStore={playersStore}/>
     </>
   );

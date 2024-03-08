@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 
-const ResetButton = observer(({ PlayersStore }) => {
+const SpeedSlider = observer(({ PlayersStore }) => {
   return (
     <div
       style={{
@@ -32,4 +32,4 @@ const ResetButton = observer(({ PlayersStore }) => {
   );
 });
 
-export default ResetButton;
+export default SpeedSlider;
