@@ -118,14 +118,14 @@ export class PlayersStore {
         clearInterval(this.intervalId);
 
         // find out who won or if there's a tie
-        const winners = this.winners;
+        // const winners = this.winners;
 
-        if (winners.length === 1) {
-          alert(`Game over. ${winners[0].name} won!`);
-        } else {
-          const winnerNames = winners.map((winner) => winner.name).join(", ");
-          alert(`Game over. It's a tie between ${winnerNames}!`);
-        }
+        // if (winners.length === 1) {
+        //   alert(`Game over. ${winners[0].name} won!`);
+        // } else {
+        //   const winnerNames = winners.map((winner) => winner.name).join(", ");
+        //   alert(`Game over. It's a tie between ${winnerNames}!`);
+        // }
       }
     }, delay);
   }

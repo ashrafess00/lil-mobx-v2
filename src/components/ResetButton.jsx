@@ -27,13 +27,7 @@ const ResetButton = observer(({ PlayersStore }) => {
           />
         </div>
       </div>
-      <button
-        onClick={() => {
-          PlayersStore.resetGame();
-        }}
-      >
-        Reset
-      </button>
+      
     </div>
   );
 });

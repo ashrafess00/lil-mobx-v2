@@ -16,6 +16,7 @@ export default observer(({ PlayersStore }) => {
   };
 
   const addPlayer = () => {
+
     if (name === "")
       setNameError(true);
     else if (PlayersStore.players.find(player => player.name === name))
@@ -72,7 +73,8 @@ export default observer(({ PlayersStore }) => {
         />
       )}
       {/* input name */}
-      <input
+      {PlayersStore.players.length < 5 && 
+        <input
         ref={inputRef}
         placeholder="Name"
         className={`input ${nameError ? "input_error" : ""}`}
@@ -86,6 +88,8 @@ export default observer(({ PlayersStore }) => {
         }}
         onKeyPress={handleKeyPress}
       />
+      }
+      
 
       {nameError ? <p className="text-error">Name field shouldn't be empty</p> : ""}
       {duplicationError ? <p className="text-error">Name is Alrady Exists</p> : ""}

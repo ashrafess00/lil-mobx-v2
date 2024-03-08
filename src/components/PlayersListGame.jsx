@@ -3,7 +3,10 @@ import { observer } from "mobx-react-lite";
 import { BigHead } from "@bigheads/core";
 import "../styles/PlayersListGame.css";
 
+
 const PlayersListGame = observer(({ PlayersStore }) => {
+  
+
   return (
     <div className="container">
       {PlayersStore.players.map((player) => (
